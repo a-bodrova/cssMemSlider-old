@@ -75,6 +75,27 @@ input[type="radio"] {
     display: none;
 }
 
+.text_container {
+    grid-area: text_container;
+    display: flex;
+    align-items: flex-start;
+    width: 500%;
+    height: auto;
+    overflow: hidden;
+}
+
+.text {
+    width: 20%;
+    padding-left: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0;
+    transition: all .6s ease;
+    transition-delay: .2s;
+}
+
 .bullets {
     grid-area: bullets;
     display: flex;
@@ -116,27 +137,6 @@ input[type="radio"] {
 
 #bullet-5:checked ~ .slider > .slider-slide__1 {
     margin-left: -80%;
-}
-
-.text_container {
-    grid-area: text_container;
-    display: flex;
-    align-items: flex-start;
-    width: 500%;
-    height: auto;
-    overflow: hidden;
-}
-
-.text {
-    width: 20%;
-    padding-left: 2rem;
-    font-size: 3rem;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    opacity: 0;
-    transition: all .6s ease;
-    transition-delay: .2s;
 }
 
 .bullet__item:hover > .bullet_item__inner {
