@@ -71,9 +71,9 @@ html, body {
     object-fit: contain;
 }
 
-input[type="radio"] {
-    display: none;
-}
+/* input[type="radio"] {
+    opacity: 0;
+} */
 
 .text_container {
     grid-area: text_container;
