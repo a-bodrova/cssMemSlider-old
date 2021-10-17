@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #374560;
+    --secondary-color: #BABDC4;
+    --font: "Verdana" sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+html, body {
+    height: 100%;
+}
+
+.main {
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.slider_container {
+    max-width: 70rem;
+    height: auto;
+    overflow: hidden;
+
+}
+
+.slider {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    
+}
+
+.slider-slide {
+    width: 20%;
+    height: auto;
+
+}
+
+.slider-slide > img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+input {
+    text-align: center;
+}
+
+#bullet-1:checked ~ .slider > .slider-slide__1 {
+    margin-left: 0;
+}
+
+#bullet-2:checked ~ .slider > .slider-slide__1 {
+    margin-left: -20%;
+}
+
+#bullet-3:checked ~ .slider > .slider-slide__1 {
+    margin-left: -40%;
+}
+
+#bullet-4:checked ~ .slider > .slider-slide__1 {
+    margin-left: -60%;
+}
+
+#bullet-5:checked ~ .slider > .slider-slide__1 {
+    margin-left: -80%;
+}
+.text_container {
+    margin-top: 3rem;
+}
